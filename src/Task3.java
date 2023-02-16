@@ -7,7 +7,7 @@ public class Task3 {
         float A[][] = new float[n][n]; 
         for (int i = 0; i < n; i++){
             for (int j = 0; j < n; j++) {
-                System.out.print("A["+i+", "+j+"]= ");
+                System.out.print("["+i+", "+j+"]= ");
                 A[i][j] = console.nextInt();
             }
         }
@@ -18,7 +18,7 @@ public class Task3 {
         float[] X = new float[n];
         int countA = 0, countB = 0, countRes = 0;
         for (int i = 0; i < n; i++){ 
-            for (int j = 0; j < n; j++){
+            for (int j = 0; j < n; j++) {
                 if (A[i][j] < 0) countA++; 
                 if (B[i][j] < 0) countB++; 
             }
@@ -52,9 +52,11 @@ public class Task3 {
             n = console.nextInt();
         } while (n > 0 && n >= 20);
 
+        System.out.println("Enter elements of array A:");
         float[][] A=Input(n);
         System.out.println("Output array A: ");
         Print(A); 
+        System.out.println("Enter elements of array B:");
         float[][] B=Input(n);
         System.out.println("Output array B: ");
         Print(B); 
